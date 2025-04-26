@@ -1,0 +1,410 @@
+/* Main Container Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.user-register-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left Side (Image) */
+.register-image-side {
+  flex: 1;
+  background: linear-gradient(rgba(0, 33, 71, 0.279), rgba(0, 33, 71, 0.8)),
+  url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.register-image-side h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.register-image-side p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
+/* Right Side (Form) */
+.register-form-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.register-form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  border-radius: 10px;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.register-header h2 {
+  color: #002147; /* Navy blue */
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.register-header p {
+  color: #6b7280; /* Gray */
+  font-size: 0.9rem;
+}
+
+/* Form Styles */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: #002147;
+  box-shadow: 0 0 0 3px rgba(0, 33, 71, 0.1);
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+/* Button Styles */
+.submit-btn {
+  background-color: #002147;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.login-link span {
+  color: #002147;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link span:hover {
+  color: #003366;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-register-container {
+    flex-direction: column;
+  }
+
+  .register-image-side {
+    padding: 2rem 1rem;
+    display: none;
+  }
+
+  .register-form-side {
+    padding: 2rem 1rem;
+  }
+}
+/* Main Container Styles */
+.Auth_container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Auth_innerContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Left Side (Image) */
+.Auth_content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Auth_content_img {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 33, 71, 0.075), rgba(0, 33, 71, 0.8)),
+  url("https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+    no-repeat center center/cover;
+  background-size: cover;
+}
+
+/* Right Side (Form) */
+.new_content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.Auth_logo {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #002147;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.login_content {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.Auth_heading {
+  font-size: 1.8rem;
+  color: #002147;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Auth_subheading {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.Auth_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 450px;
+  margin-bottom: 1.5rem;
+}
+.Auth_form_neww {
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+  width: 450px;
+}
+
+.Auth_formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Auth_label {
+  font-size: 0.9rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.Auth_input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.Auth_input:focus {
+  outline: none;
+  border-color: #002147;
+  box-shadow: 0 0 0 3px rgba(0, 33, 71, 0.1);
+}
+
+/* Button Styles */
+.Auth_button {
+  background-color: #002147;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.Auth_button:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+.Auth_button:active {
+  transform: translateY(0);
+}
+
+/* Signup Prompt */
+.Auth_signupPrompt {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.Auth_signupLink {
+  color: #002147;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Auth_signupLink:hover {
+  color: #003366;
+}
+
+/* Google Button */
+.Auth_googleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+  background-color: white;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.Auth_googleButton:hover {
+  background-color: #f9fafb;
+  transform: translateY(-2px);
+}
+
+.Auth_googleButton:active {
+  transform: translateY(0);
+}
+
+.glogo {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Auth_innerContainer {
+    flex-direction: column;
+  }
+
+  .Auth_content_img {
+    display: none;
+    /* You can choose to show/hide the image side on mobile */
+  }
+
+  .new_content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Additional Utility Classes */
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.forgot-password a {
+  color: #002147;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
