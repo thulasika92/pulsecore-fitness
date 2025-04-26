@@ -1,8 +1,6 @@
 package backend.controller;
 
-import backend.exception.UserNotFoundException;
 import backend.model.NotificationModel;
-import backend.model.UserModel;
 import backend.repository.NotificationRepository;
 import backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
