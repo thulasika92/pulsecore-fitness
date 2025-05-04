@@ -30,7 +30,7 @@ public class LearningProgressController {
         return learningProgressRepository.findById(id)
                 .orElseThrow(() -> new LearningProgressNotFoundException(id));
     }
-
+//putMapping
     @PutMapping("/learningProgress/{id}")
     LearningProgressModel update(@RequestBody LearningProgressModel newLearningProgressModel, @PathVariable String id) {
         return learningProgressRepository.findById(id)
@@ -45,6 +45,7 @@ public class LearningProgressController {
                     return learningProgressRepository.save(learningProgressModel);
                 }).orElseThrow(() -> new LearningProgressNotFoundException(id));
     }
+    //this is for the pathvariable
 
     @DeleteMapping("/learningProgress/{id}")
     public void delete(@PathVariable String id) {
