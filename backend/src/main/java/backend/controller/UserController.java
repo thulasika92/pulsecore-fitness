@@ -80,7 +80,7 @@ public class UserController {
                 }).orElseThrow(() -> new UserNotFoundException(id));
     }
 
-    //delete
+    //delete profile
     @DeleteMapping("/user/{id}")
     String deleteProfile(@PathVariable String id) {
         if (!userRepository.existsById(id)) {
