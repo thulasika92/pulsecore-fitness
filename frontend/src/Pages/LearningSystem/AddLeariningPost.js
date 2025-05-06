@@ -108,7 +108,7 @@ function AddLeariningPost() {
               placeholder="Share what you've achieved"
             />
           </div>
-
+//button
           <button type="submit" className="LPost-submit-btn">Submit Post</button>
         </form>
       </div>
