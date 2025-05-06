@@ -90,7 +90,7 @@
   font-size: 1.1rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .navbar-container {
     padding: 1rem;
