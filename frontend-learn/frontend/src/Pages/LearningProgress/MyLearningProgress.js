@@ -3,7 +3,7 @@ import { FaUserCircle, FaEdit, FaTrash, FaPen } from "react-icons/fa";
 import './LearningPro.css';
 import NavBar from '../../Components/NavBar/NavBar';
 import { useNavigate } from 'react-router-dom';
-
+//forntend of learning
 function MyLearningProgress() {
   const [progressData, setProgressData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
