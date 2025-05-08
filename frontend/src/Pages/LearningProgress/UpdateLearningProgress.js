@@ -133,3 +133,4 @@ function UpdateLearningProgress() {
 }
 
 export default UpdateLearningProgress;
+//add comments
